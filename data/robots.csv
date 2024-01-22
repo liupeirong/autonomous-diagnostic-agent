@@ -1,0 +1,5 @@
+name,kind,date_purchase,serial_number,manufacturer
+spot_jr,spot,2023-12-01,sp20789,boston dynamics
+spot_sr,spot,2023-10-25,sp20123,boston dynamics
+petoi_dog,petoi,2023-04-12,pd125654,petoi
+petoi_cat,petoi,2023-11-30,pd985473,petoi

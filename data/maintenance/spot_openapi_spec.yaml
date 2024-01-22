@@ -1,0 +1,52 @@
+openapi: 3.0.3
+info:
+  title: API Spec for accessing maintenance records of Spot robots
+  description: APIs for accessing maintenance records of Spot robots.
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:5000
+
+components:
+  schemas: {}
+  securitySchemes: {}
+
+paths:
+  /maintenance/{name}:
+    get:
+      description: 'Get maintenance records about a robot from its name'
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successfully retrieved maintenance records or no records found
+          content:
+            application/json:
+              schema:
+                properties:
+                  required: []
+                  maintenance:
+                    type: array
+                    items:
+                      properties:
+                        name:
+                          type: string
+                        date:
+                          format: date
+                          type: string
+                        description:
+                          type: string
+                        next_maintenance_date:
+                          format: date
+                          type: string
+                        remarks:
+                          type: string
+                      required: []
+                      title: Maintenance
+                      type: object
+                  error:
+                    type: string

@@ -1,0 +1,15 @@
+{
+  "cSpell.words": [
+    "azuresearch",
+    "groundtruth",
+    "huggingface",
+    "langsmith",
+    "loadenv",
+    "openapi",
+    "vectorstores"
+  ],
+  "python.analysis.extraPaths": [
+    "./utils"
+  ],
+  "python.terminal.activateEnvironment": true
+}

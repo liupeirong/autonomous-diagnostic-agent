@@ -1,0 +1,8 @@
+robot|date|description|performed_by|date_validation|validated_by|next_maintenance_date|remarks
+spot_jr|2023-01-01|Cleaned and lubricated joints and actuators|John Smith|2023-01-06|Sarah Johnson|2023-07-05|movements are now smoother and more efficient.
+spot_jr|2023-02-10|Replaced worn-out battery|Emily Davis|2023-02-11|Mark Thompson|2023-08-10|battery life has significantly improved.
+spot_jr|2023-03-15|Inspected and tightened loose connections|Michael Rodriguez|2023-03-16|Rebecca Martinez|2023-09-15|stability has been restored, ensuring accurate movements.
+spot_jr|2023-09-20|Cleaned and recalibrated sensors|Jennifer Wilson|2023-09-21|Robert Brown|2023-12-20|sensor accuracy has been improved, resulting in better obstacle detection.
+spot_jr|2023-11-25|Updated software and firmware to the latest version|Daniel Clark|2023-11-26|Jessica White|2024-01-12|performance has been enhanced with the latest software updates.
+spot_sr|2023-07-02|Cleaned robot's sensors and replaced batteries|John Smith|2023-07-03|Emily Johnson|2023-11-02|Motor sensor wearing out. Should replace in 6 months.
+spot_sr|2023-08-15|Calibrated robot's motors and updated software|Sarah Davis|2023-08-16|Michael Brown|2024-01-15|Motor sensor wearing out.

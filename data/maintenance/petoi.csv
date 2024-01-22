@@ -1,0 +1,8 @@
+name|date|performed|performed_by|inspection_result|next_maintenance_date|notes
+petoi_dog|2023-06-05|Cleaned and lubricated joints|John Smith|All joints are moving smoothly|2023-10-05|Robot is functioning well after maintenance
+petoi_dog|2023-07-10|Replaced worn-out batteries|Jane Doe|New batteries installed|2023-11-10|Robot has increased power and longer battery life now
+petoi_dog|2023-08-15|Checked wiring connections|David Johnson|All connections are secure|2023-12-15|No loose wires found, robot is safe to operate
+petoi_cat|2023-06-03|Clean and lubricate joints|John Smith|All joints functioning smoothly|2023-10-03|Robot is in good condition, no issues found during maintenance.
+petoi_cat|2023-07-08|Replace worn-out battery|Jane Doe|New battery installed successfully|2023-11-08|Robot's battery life has improved after replacement.
+petoi_cat|2023-08-15|Calibrate sensors|Robert Johnson|All sensors calibrated accurately|2023-12-15|Robot's sensor readings are now more precise.
+petoi_cat|2023-09-20|Update software|Emily Anderson|Software updated to latest version|2024-02-20|Robot's performance and functionality improved after software update.

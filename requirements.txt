@@ -1,0 +1,18 @@
+# python==3.10
+langchain==0.0.353
+openai==1.6.1
+tiktoken==0.5.2
+bs4
+lxml
+azure-storage-file-datalake
+azure-identity
+# azure-search-documents==11.4.0b8 # compatible with AzureSearch Retriever in langchain
+azure-search-documents==11.4.0
+chromadb==0.4.21
+python-dotenv
+pyodbc
+azure-cosmos
+Flask
+promptflow==1.3.0
+promptflow-tools==1.0.2
+datasets==2.16.1

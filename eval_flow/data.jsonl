@@ -1,0 +1,2 @@
+{"question": "What APIs can I use to program spot_sr?", "prediction": "you can program spot sr using Boston Dynamics API", "groundtruth": "API;program"}
+{"question": "What robots do we have?", "prediction": "we have spot_jr, spot_sr", "groundtruth": "Spot Jr;Spot Sr;Petoi Dog;Petoi Cat"}

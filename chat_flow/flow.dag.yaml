@@ -1,0 +1,47 @@
+inputs:
+  question:
+    type: string
+    default: My robot spot_jr can't make left turns. When was it purchased and last
+      serviced? What is the API that I can call?
+outputs:
+  answer:
+    type: string
+    reference: ${call_agent.output.content}
+nodes:
+- name: get_llm_tools
+  type: python
+  source:
+    type: code
+    path: ./llm_tools.py
+  inputs: {}
+- name: call_agent
+  type: python
+  source:
+    type: code
+    path: agent_tool.py
+  inputs:
+    aoai_connection: aoai-canada
+    deployment: cegpt35t1106
+    user_question: ${inputs.question}
+    system_message: ${system_prompt.output}
+    tools: ${get_llm_tools.output}
+- name: system_prompt
+  use_variants: true
+node_variants:
+  system_prompt:
+    default_variant_id: variant_0
+    variants:
+      variant_0:
+        node:
+          type: prompt
+          source:
+            type: code
+            path: system_prompt.jinja2
+          inputs: {}
+      variant_1:
+        node:
+          type: prompt
+          source:
+            type: code
+            path: system_prompt_v1.jinja2
+          inputs: {}

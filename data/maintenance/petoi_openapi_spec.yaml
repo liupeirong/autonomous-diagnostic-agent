@@ -1,0 +1,53 @@
+openapi: 3.0.3
+info:
+  title: API Spec for accessing maintenance records of Petoi robots
+  description: APIs for accessing maintenance records of Petoi robots.
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:3000
+
+components:
+  schemas: {}
+  securitySchemes: {}
+
+paths:
+  /maintenance_records/{name}:
+    get:
+      description: 'Get maintenance records about a robot from its name'
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successfully retrieved maintenance records or no records found
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    name:
+                      type: string
+                    date:
+                      format: date
+                      type: string
+                    inspection_result:
+                      type: string
+                    notes:
+                      type: string
+                  required: []
+                  title: Maintenance
+                  type: object
+        '500':
+          description: Failed to retrieved maintenance records
+          content:
+            application/json:
+              schema:
+                properties:
+                  error:
+                    type: string
+
