@@ -26,17 +26,17 @@ Here's a diagram of the solution:
 
 ## Repo structure
 
-```sh
-|--chat
-|    |--functions # this folder contains custom functions to access data, and sample REST APIs that expose data.
-|    |-- # each file represents a different approach to solve the problem.
-|--chat_flow # prompt flow implemented with OpenAI Function Calling tool
-|--data # sample robot registration data, manuals, maintenance data, and OpenAPI specs for different vendors.
-|--eval_flow # basic evaluation with prompt flow
-|--eval_langchain # basic evaluation with LangChain
-|--eval_langsmith # basic evaluation with LangSmith
-|--ingest # functions to ingest the sample data into Azure SQL, CosmosDB, or Azure AI Search.
-|--utils # utilities to load configurations etc.
+```bash
+├─chat
+│  ├─functions # this folder contains custom functions to access data, and sample REST APIs that expose data.
+│  ├─# each file represents a different approach to solve the problem.
+├─chat_flow # prompt flow implemented with OpenAI Function Calling tool
+├─data # sample robot registration data, manuals, maintenance data, and OpenAPI specs for different vendors.
+├─eval_flow # basic evaluation with prompt flow
+├─eval_langchain # basic evaluation with LangChain
+├─eval_langsmith # basic evaluation with LangSmith
+├─ingest # functions to ingest the sample data into Azure SQL, CosmosDB, or Azure AI Search.
+├─utils # utilities to load configurations etc.
 ```
 
 The [notebook](agent.ipynb) does pretty much the same thing as the code does. It just makes it a bit easier to experiment.
