@@ -106,7 +106,7 @@ Here are some learnings from building this sample. There are a lot of capabiliti
 There's a lot more to learn about building an LLM application and especially autonomous agent. Here are some examples.
  Of course some of these will be in its own repo.
 
-1. Add memories to make it a chat application rather than only running one question at a time.
+1. Create a lighter-weight OpenAPI tool that works with LangChain v0.1 and only fetches data.
 1. Use LLM to generate real time logs and telemetry data.
 1. Add real time logs and telemetry data. - Will the agent end up getting confused with too many tools? If so,
  should we have multiple agents, and have a routing agent to call each domain specific agent?

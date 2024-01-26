@@ -14,7 +14,7 @@ components:
 paths:
   /maintenance/{name}:
     get:
-      description: 'Get maintenance records about a robot from its name'
+      description: 'Get maintenance records about a robot based on its name'
       parameters:
         - name: name
           in: path
