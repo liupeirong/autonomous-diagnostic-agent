@@ -88,6 +88,9 @@ Here are some learnings from building this sample. There are a lot of capabiliti
   to figure out how to customize this agent to, for example, only use the GET API.
   * to use it as a tool together with other tools, you can call the `run` function of this agent's executor. But the `run` function is
   deprecated in LangChain v0.1. The new `invoke` function cannot be used this way.
+* LLMs seem to require less reasoning capabilities to accomplish a goal using multi-agents vs. single-agent-multi-tools.
+  With multi-agents, each agent encapsulates the logic to achieve a smaller intermediate goal, so it helps the LLM to break down complex tasks.
+  A single agent provided with a lot of tools and instructions seems to have to work harder to break down complex tasks.
 * When using prompt flow, here are some challenges:
   * Cannot use environment variables in `flow.dag.yaml` for things like connection name or deployment name. These are usually not inputs,
   hardcoding them makes them hard to manage.
@@ -106,7 +109,6 @@ Here are some learnings from building this sample. There are a lot of capabiliti
 There's a lot more to learn about building an LLM application and especially autonomous agent. Here are some examples.
  Of course some of these will be in its own repo.
 
-1. Add memories to make it a chat application rather than only running one question at a time.
 1. Use LLM to generate real time logs and telemetry data.
 1. Add real time logs and telemetry data. - Will the agent end up getting confused with too many tools? If so,
  should we have multiple agents, and have a routing agent to call each domain specific agent?
